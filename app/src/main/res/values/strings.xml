@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Open Food Facts</string>
+    <string name="information_fat">Matières grasses / lipides</string>
+    <string name="information_saturated_fat">Acides gras saturés</string>
+    <string name="information_sugar">Sucres</string>
+    <string name="information_salt">Sel</string>
+    <string name="value_small_quantity">Faible quantité</string>
+    <string name="value_medium_quantity">Quantité modérée</string>
+    <string name="value_high_quantity">Quantité élevée</string>
+
+    <string name="column_per100g">Pour 100g</string>
+    <string name="column_perPortion">Par part</string>
+    <string name="cell_energy">Énergie</string>
+    <string name="cell_fat">Matières grasses</string>
+    <string name="cell_saturated_fat">dont Acides gras saturés</string>
+    <string name="cell_carbs">Glucides</string>
+    <string name="cell_sugar">dont Sucres</string>
+    <string name="cell_fibers">Fibres Alimentaires</string>
+    <string name="cell_protein">Protéines</string>
+    <string name="cell_salt">Sel</string>
+    <string name="cell_sodium">Sodium</string>
 </resources>

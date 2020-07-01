@@ -90,7 +90,7 @@
 
     <com.example.openfoodfacts.ItemValueView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:id="@+id/quantity"
         app:dividerVisibility="visible"
         app:title="Quantité"
@@ -100,7 +100,7 @@
 
     <com.example.openfoodfacts.ItemValueView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         app:dividerVisibility="visible"
         app:title="Vendu"
         app:value="France"

@@ -30,7 +30,7 @@
                 layout="@layout/fragment_details_header" />
 
             <include
-                layout="@layout/fragment_details_summary_content" />
+                layout="@layout/fragment_details_nutrition_content" />
 
         </LinearLayout>
 

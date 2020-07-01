@@ -1,10 +1,13 @@
 package com.example.openfoodfacts
 
 import android.content.Context
+import android.content.res.ColorStateList
 import android.util.AttributeSet
 import android.view.View
 import android.widget.TextView
+import androidx.annotation.ColorInt
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.view_item_value.view.*
 
 class ItemValueView @JvmOverloads constructor(
@@ -31,6 +34,9 @@ class ItemValueView @JvmOverloads constructor(
             try {
                 title.text = getString(R.styleable.ItemValueView_title)
                 value.text = getString(R.styleable.ItemValueView_value)
+                value.setTextColor(getColorStateList(R.styleable.ItemValueView_valueColor) ?: ColorStateList.valueOf(
+                    ContextCompat.getColor(context, R.color.gray_3)
+                ))
                 divider.visibility = if (getInt(
                         R.styleable.ItemValueView_dividerVisibility,
                         0
@@ -42,4 +48,12 @@ class ItemValueView @JvmOverloads constructor(
         }
 
     }
+
+    @ColorInt
+    var valueColor: Int = 0
+        get() = value.currentTextColor
+        set(color) {
+            field = color
+            value.setTextColor(color)
+        }
 }

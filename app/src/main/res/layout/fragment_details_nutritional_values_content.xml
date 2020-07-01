@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:border="right|bottom"
+        android:id="@+id/c1r1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cell_energy"
+        app:border="right|bottom"
+        android:id="@+id/c1r2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/c1r1"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cell_fat"
+        app:border="right|bottom"
+        android:id="@+id/c1r3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/c1r2"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cell_saturated_fat"
+        app:border="right|bottom"
+        android:id="@+id/c1r4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/c1r3"
+        />
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cell_carbs"
+        app:border="right|bottom"
+        android:id="@+id/c1r5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/c1r4"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cell_sugar"
+        app:border="right|bottom"
+        android:id="@+id/c1r6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/c1r5"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cell_fibers"
+        app:border="right|bottom"
+        android:id="@+id/c1r7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/c1r6"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cell_protein"
+        app:border="right|bottom"
+        android:id="@+id/c1r8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/c1r7"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cell_salt"
+        app:border="right|bottom"
+        android:id="@+id/c1r9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/c1r8"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cell_sodium"
+        app:border="right"
+        android:id="@+id/c1r10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/c1r9"/>
+
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/column_per100g"
+        app:border="right|bottom"
+        android:id="@+id/c2r1"
+        app:layout_constraintLeft_toRightOf="@id/first"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="293kj"
+        app:border="right|bottom"
+        android:id="@+id/c2r2"
+        app:layout_constraintLeft_toRightOf="@id/first"
+        app:layout_constraintTop_toBottomOf="@id/c2r1"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0,8g"
+        app:border="right|bottom"
+        android:id="@+id/c2r3"
+        app:layout_constraintLeft_toRightOf="@id/first"
+        app:layout_constraintTop_toBottomOf="@id/c2r2"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0,1g"
+        app:border="right|bottom"
+        android:id="@+id/c2r4"
+        app:layout_constraintLeft_toRightOf="@id/first"
+        app:layout_constraintTop_toBottomOf="@id/c2r3"
+        />
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8,4g"
+        app:border="right|bottom"
+        android:id="@+id/c2r5"
+        app:layout_constraintLeft_toRightOf="@id/first"
+        app:layout_constraintTop_toBottomOf="@id/c2r4"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5,2g"
+        app:border="right|bottom"
+        android:id="@+id/c2r6"
+        app:layout_constraintLeft_toRightOf="@id/first"
+        app:layout_constraintTop_toBottomOf="@id/c2r5"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5,2g"
+        app:border="right|bottom"
+        android:id="@+id/c2r7"
+        app:layout_constraintLeft_toRightOf="@id/first"
+        app:layout_constraintTop_toBottomOf="@id/c2r6"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4,2g"
+        app:border="right|bottom"
+        android:id="@+id/c2r8"
+        app:layout_constraintLeft_toRightOf="@id/first"
+        app:layout_constraintTop_toBottomOf="@id/c2r7"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0,75g"
+        app:border="right|bottom"
+        android:id="@+id/c2r9"
+        app:layout_constraintLeft_toRightOf="@id/first"
+        app:layout_constraintTop_toBottomOf="@id/c2r8"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0,295g"
+        app:border="right"
+        android:id="@+id/c2r10"
+        app:layout_constraintLeft_toRightOf="@id/first"
+        app:layout_constraintTop_toBottomOf="@id/c2r9"/>
+
+
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/column_perPortion"
+        app:border="right|bottom"
+        android:id="@+id/c3r1"
+        app:layout_constraintLeft_toRightOf="@id/second"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        app:border="right|bottom"
+        android:id="@+id/c3r2"
+        app:layout_constraintLeft_toRightOf="@id/second"
+        app:layout_constraintTop_toBottomOf="@id/c3r1"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        app:border="right|bottom"
+        android:id="@+id/c3r3"
+        app:layout_constraintLeft_toRightOf="@id/second"
+        app:layout_constraintTop_toBottomOf="@id/c3r2"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        app:border="right|bottom"
+        android:id="@+id/c3r4"
+        app:layout_constraintLeft_toRightOf="@id/second"
+        app:layout_constraintTop_toBottomOf="@id/c3r3"
+        />
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        app:border="right|bottom"
+        android:id="@+id/c3r5"
+        app:layout_constraintLeft_toRightOf="@id/second"
+        app:layout_constraintTop_toBottomOf="@id/c3r4"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        app:border="right|bottom"
+        android:id="@+id/c3r6"
+        app:layout_constraintLeft_toRightOf="@id/second"
+        app:layout_constraintTop_toBottomOf="@id/c3r5"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        app:border="right|bottom"
+        android:id="@+id/c3r7"
+        app:layout_constraintLeft_toRightOf="@id/second"
+        app:layout_constraintTop_toBottomOf="@id/c3r6"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        app:border="right|bottom"
+        android:id="@+id/c3r8"
+        app:layout_constraintLeft_toRightOf="@id/second"
+        app:layout_constraintTop_toBottomOf="@id/c3r7"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        app:border="right|bottom"
+        android:id="@+id/c3r9"
+        app:layout_constraintLeft_toRightOf="@id/second"
+        app:layout_constraintTop_toBottomOf="@id/c3r8"/>
+
+    <com.example.openfoodfacts.TableCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        app:border="right"
+        android:id="@+id/c3r10"
+        app:layout_constraintLeft_toRightOf="@id/second"
+        app:layout_constraintTop_toBottomOf="@id/c3r9"/>
+
+
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:constraint_referenced_ids="c1r1,c1r2,c1r3,c1r4,c1r5,c1r6,c1r7,c1r8,c1r9,c1r10"
+        app:barrierDirection="right" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:constraint_referenced_ids="c2r1,c2r2,c2r3,c2r4,c2r5,c2r6,c2r7,c2r8,c2r9,c2r10"
+        app:barrierDirection="right"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
