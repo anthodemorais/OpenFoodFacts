@@ -4,7 +4,7 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/item_value_title"
         android:textStyle="normal"
         android:textSize="15dp"
@@ -14,7 +14,7 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/item_value_value"
         android:textStyle="normal"
         android:textSize="15dp"
@@ -23,10 +23,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="1dp"
         android:background="@color/gray_1"
         android:id="@+id/item_value_divider"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/item_value_bottom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/item_value_bottom"
+        app:constraint_referenced_ids="item_value_title,item_value_value"
+        app:barrierDirection="bottom"/>
 
 </merge>

@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Open Food Facts</string>
+
+    <string name="tab_fiche">Fiche</string>
+    <string name="tab_nutrition">Nutrition</string>
+    <string name="tab_tableau">Tableau</string>
+
     <string name="information_fat">Matières grasses / lipides</string>
     <string name="information_saturated_fat">Acides gras saturés</string>
     <string name="information_sugar">Sucres</string>
@@ -19,4 +24,9 @@
     <string name="cell_protein">Protéines</string>
     <string name="cell_salt">Sel</string>
     <string name="cell_sodium">Sodium</string>
+    
+    <string name="scan_info">Nutriscore : %1$s</string>
+    <string name="screen_title">Mes scans</string>
+    <string name="screen_title_empty">Vous n\'avez pas encore scanné de produit</string>
+    <string name="button_empty_screen">Commencer</string>
 </resources>

@@ -1,70 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:layout_margin="16dp"
+    android:clipChildren="false"
+    android:clipToPadding="false">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="113dp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="23dp">
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="2dp"
+        app:contentPaddingBottom="20dp"
+        app:contentPaddingLeft="150dp"
+        app:contentPaddingRight="10dp"
+        app:contentPaddingTop="20dp"
+        android:clipChildren="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="17dp"
-            android:textColor="@color/blue"
-            tools:text="Petits pois et carottes"
-            android:layout_marginLeft="143dp"
-            android:id="@+id/title"
-            android:layout_marginTop="25dp"/>
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="13dp"
-            android:textColor="@color/gray_3"
-            tools:text="Cassegrain"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginLeft="143dp"
-            android:layout_marginTop="48dp"
-            android:id="@+id/company"/>
+            <TextView
+                android:id="@+id/item_product_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Petits pois et carottes" />
 
-        <View
-            android:layout_width="13dp"
-            android:layout_height="13dp"
-            android:background="@drawable/blue_circle"
-            android:layout_marginLeft="143dp"
-            android:layout_marginTop="72dp"
-            android:id="@+id/circle"/>
+            <TextView
+                android:id="@+id/item_product_brand"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/gray_3"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/item_product_name"
+                tools:text="Cassegrain" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:textColor="@android:color/black"
-            tools:text="Nutriscore : A"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginLeft="163dp"
-            android:layout_marginTop="70dp"
-            android:id="@+id/score"/>
-        
+            <View
+                android:id="@+id/item_product_nutriscore_circle"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:background="@drawable/blue_circle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/item_product_brand" />
+
+            <TextView
+                android:id="@+id/item_product_nutriscore_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray_3"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/item_product_nutriscore_circle"
+                app:layout_constraintTop_toTopOf="@id/item_product_nutriscore_circle"
+                tools:text="Nutriscore : A" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.cardview.widget.CardView>
 
     <ImageView
+        android:id="@+id/product_picture"
         android:layout_width="113dp"
         android:layout_height="113dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="10dp"
+        android:scaleType="centerCrop"
+        android:translationZ="10dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="4dp"
-        android:src="@mipmap/placeholder"
-        android:elevation="2dp"
-        android:id="@+id/image"/>
+        tools:src="@android:color/black" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

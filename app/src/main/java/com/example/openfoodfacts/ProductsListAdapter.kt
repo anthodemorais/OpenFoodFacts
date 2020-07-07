@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.list_product_item.view.*
 
 class ProductsListAdapter(private val products: List<Product>, private val clickListener: OnProductItemClicked) : RecyclerView.Adapter<ProductsListAdapter.ViewHolder>() {
@@ -42,6 +43,7 @@ class ProductsListAdapter(private val products: List<Product>, private val click
             title.text = product.name
             company.text = product.brand
             score.text = "Nutriscore : " + product.nutriscore
+            Picasso.get().load(product.imgUrl).into(image)
         }
 
     }
